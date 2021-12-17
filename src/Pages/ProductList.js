@@ -5,7 +5,9 @@ import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import CardActionArea from '@mui/material/CardActionArea';
+import { palette } from '@mui/system';
 import { Container, Text, Div, Row, Col } from 'atomize';
+import Skeleton from '@mui/material/Skeleton';
 import { Link } from 'react-router-dom';
 
 const ProductList = () => {
@@ -18,7 +20,9 @@ const ProductList = () => {
         };
     }, [fetchAllProducts])
 
-    if(!products) return <div>Loading</div>
+    if(!products) return (
+        <Skeleton id='product-page-loading' variant="rectangular" width={210} height={118} />
+    )
 
     return (
         <Container>
