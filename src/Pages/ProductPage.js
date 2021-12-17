@@ -2,7 +2,9 @@ import React, { useEffect, useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { ShopContext } from '../Context/shopContext';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button'
+import Button from '@mui/material/Button';
+import { Skeleton } from '@mui/material';
+import { sizing } from '@mui/system';
 import { Text, Div, Row, Col, Container } from 'atomize';
 
 function ProductPage() {
@@ -17,7 +19,13 @@ function ProductPage() {
         };
     }, [ fetchProductWithId, id ])
 
-    if(!product.title) return <div>Loading</div>
+    if(!product.title) return (
+        <Container>
+            <Row>
+            <Skeleton variant="rectangular" width={ '30%' } />
+            </Row>
+        </Container>
+    )
 
     return (
         <Container>
