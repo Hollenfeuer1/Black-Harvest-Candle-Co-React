@@ -5,7 +5,6 @@ import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import CardActionArea from '@mui/material/CardActionArea';
-import { palette } from '@mui/system';
 import { Container, Text, Div, Row, Col } from 'atomize';
 import Skeleton from '@mui/material/Skeleton';
 import { Link } from 'react-router-dom';
