@@ -4,7 +4,9 @@ import Container from '@mui/material/Container';
 const Home = () => {
 
     return (
-        <Container>Home</Container>
+        <Container id='home-banner'>
+            <img src="/images/Home-Banner.jpg" />
+        </Container>
     );
   }
   
