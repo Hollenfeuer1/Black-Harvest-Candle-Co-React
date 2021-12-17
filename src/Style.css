@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Smythe&display=swap');
+
+body {
+    font-family: 'Roboto','Helvetica Neue', sans-serif;
+    background-color: #0B1315;
+    color: white;
+}
+
+h1 {
+  font-size: 2em !important;
+  color: #EBA059;;
+}
+
+h2 {
+  font-size: 1.5em !important;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #EBA059;
+}
+  
+  .MuiBox-root {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .product-description {
+    max-width: 960px;
+  }
+
+  #add-to-cart-btn {
+    background-color: #EBA059;
+  }
+
+  #add-to-cart-btn:hover {
+    background-color: #cc8b4e;
+  }
